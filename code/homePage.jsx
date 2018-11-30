@@ -1,7 +1,7 @@
 module.exports = <div class="center-children">
     <h1>Welcome to the Future</h1>
     <h5>Care to join me?</h5>
-    <a class="waves-effect waves-light btn" onclick={()=>loadPage("/login")}>
+    <a class="waves-effect waves-light btn" onclick={()=>history.loadPage("/login")}>
         Go to Login
     </a>
 </div>

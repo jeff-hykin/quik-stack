@@ -23,7 +23,7 @@ document.head.add(
 //
 window.homePage  = require("./code/homePage")
 window.loginPage = require("./code/loginFolder/loginPage")
-window.loadPage  = function(path) {
+history.loadPage = function(path) {
     // Homepage
     if (path == "/" || path == "/homePage") {
         document.body = <body>{homePage}</body>
@@ -35,4 +35,4 @@ window.loadPage  = function(path) {
         document.body = <body>Error Unknown route :/</body>
     }
 }
-loadPage(window.location.pathname)
+history.loadPage(window.location.pathname)

@@ -6,7 +6,7 @@ module.exports = <div class="center-children">
             {passwordElement = <input type="password" placeholder="password"/>}
         </div>
         <div class="card-action">
-            <a href="#" onclick={onclick}>
+            <a onclick={onclick}>
                 Submit
             </a>
         </div>
