@@ -1,40 +1,26 @@
 # quik-stack
 A new way to do webdev
 
-This is an easy-clone boilerplate for creating a website using quik-server
+### What is this?
+This is an easy-clone setup for creating a website. It uses javascript (Node with Express.js) for the backend. Git clone this repo, run `npm start` and then go to http://localhost:3000/ to see it. The code is an example in-and-of itself. The main peices are:
+1. the files in code/
+2. website.jsx
+3. server.js
 
 ### Why use this?
-Its designed to get out of your way
-1. You can write backend functions and call them without ever touching an api
-2. You're not required to have (html, css, js) for a webpage, jsx is integrated and can do it all
-3. This works with all the old javascript/css/jquery tricks all over the internet. Quik-stack isnt a framework, its a toolbox that makes things magnitudes easier without making you change your entire way of thinking.
+This setup is unique in that it enables powerful quik modules (imported from npm) that modify frontend and backend code at the same time. Anyone can make and include these modules. These modules are especially useful for processes like authentication that need coordination between frontend and backend. Right now the default modules are quik-backend, quik-dom, and quik-history. <br>
+You can remove any of the default modules you don't care about (just backspace the `server.quikAdd()` line), the quik-server will still work without them. Quik stack was created to have nothing that is extra, and nothing that is missing. The default modules are designed as a toolbox you can grab from rather than a framework that you have to work inside of.
 
-### Whats an example?
-Lets say you want to have a page that lists out a bunch of video games from a SQL database
-<br>code/getVideoGameList.backend.js
-```javascript
-module.exports = () => {
-    // SQL stuff here probably would use a library
-    return videoGame.query.all()
-}
-```
-code/videoGameUI.jsx
-```javascript
-module.exports = page = <div>
-    <span>Loading...</span>
-</div>
-backend.getVideoGameList().then((result)=>{
-    // remove the loading
-    page.children = []
-    // add each as an element
-    for (let each of result) {
-        page.add(<h4>{each.title}</h4>,<p>{each.content}</p>)
-    }
-})
-```
-Thats all that would be needed (excluding the database code). The server uses the filename to generate the frontend function so no api or serializer is ever needed. If the backend function is in a folder ex: code/videoGames/getVideoGameList.backend.js, just call it on frontend like this `backend.videoGames.getVideoGameList()` and this should work for any amount of nesting.
+### What is this built on?
+The core of this stack is quik-server, which is built on Node.js, Express.js, and Parcel.js.
 
-#to-do
-- add a tool for managing history
-- add a seperate quik-tool for managing logins/permissions
-- add a seperate quik-tool for databases
+#### what are some of the plug-in features?
+quik-dom enables JSX to HTML, meaning you can basically write html inside of javascript.<br>
+quik-backend enables calling backend functions directly from the frontend using the `backend` object. If you name a file with ".backend.js" and export a function, then that function will be callable from the frontend. See `code/loginFolder/loginPage.jsx` for an example<br>
+quik-history is a module for using with single-page-applications. It calls the loadPage function whenever the user presses back/forward, and it also keeps track of adding things to the history when a new page is loaded.
+<br>
+<br>
+<br>
+<br>Todo:<br>
+- add middleware to quik-backend
+- create 
