@@ -37,6 +37,6 @@ history.loadPage = function(path) {
     }
 }
 
-// load the current page after the head and all the pages are setup
+// actually load the current page after the head and all the pages are setup
 let currentUrl = window.location.pathname.replace("/","")
 history.loadPage(currentUrl)
