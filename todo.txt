@@ -1,0 +1,11 @@
+- add npm run cleanup to package.json
+- add error handling to quik-backend
+- add middleware to quik-backend
+- add a catch to quik-history where if you forget to call the loader function, it will do it for you
+
+tutorial
+- install npm
+- show:
+    - how to include css
+    - how to change header stuff
+    

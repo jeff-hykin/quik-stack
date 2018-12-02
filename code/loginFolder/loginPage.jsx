@@ -1,4 +1,12 @@
-module.exports = <div class="center-children">
+let usernameElement, passwordElement
+
+async function onclick(eventObject) {
+    // call the function inside check.backend.js and give it the username and password
+    let backendResponse = await backend.loginFolder.check({username: usernameElement.value, password: passwordElement.value})
+    alert(backendResponse)
+}
+
+module.exports = <body>
     <div class="card blue-grey darken-1">
         <div class="card-content white-text">
             <span class="card-title">Login</span>
@@ -11,10 +19,4 @@ module.exports = <div class="center-children">
             </a>
         </div>
     </div>
-</div>
-
-async function onclick(e) {
-    // give the backend "check" function the username and password
-    let backendResponse = await backend.loginFolder.check({username: usernameElement.value, password: passwordElement.value})
-    alert(backendResponse);
-}
+</body>
