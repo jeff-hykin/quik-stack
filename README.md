@@ -14,7 +14,7 @@ You can remove any of the default modules you don't care about (just backspace t
 ### What is this built on?
 The core of this stack is quik-server, which is built on Node.js, Express.js, and Parcel.js.
 
-#### what are some of the plug-in features?
+#### What are some of the plug-in features?
 quik-dom enables JSX to HTML, meaning you can basically write html inside of javascript.<br>
 quik-backend enables calling backend functions directly from the frontend using the `backend` object. If you name a file with ".backend.js" and export a function, then that function will be callable from the frontend. See `code/loginFolder/loginPage.jsx` for an example<br>
 quik-history is a module for using with single-page-applications. It calls the loadPage function whenever the user presses back/forward, and it also keeps track of adding things to the history when a new page is loaded.
@@ -23,4 +23,4 @@ quik-history is a module for using with single-page-applications. It calls the l
 <br>
 <br>Todo:<br>
 - add middleware to quik-backend
-- create 
+- create quik-auth
