@@ -2,8 +2,12 @@ let usernameElement, passwordElement
 
 async function onclick(eventObject) {
     // call the function inside check.backend.js and give it the username and password
-    let backendResponse = await backend.loginFolder.check({username: usernameElement.value, password: passwordElement.value})
-    alert(backendResponse)
+    try {
+        let backendResponse = await backend.loginFolder.check({username: usernameElement.value, password: passwordElement.value})
+        alert(backendResponse)
+    } catch (error) {
+        alert(`The backend thew an error: ${error}`)
+    }
 }
 
 module.exports = <body>
