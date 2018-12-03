@@ -1,6 +1,8 @@
-# Quik Stack
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeff-hykin/quik-stack/blob/master/LICENSE) 
+[![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/quik-server) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 Web development without the boring stuff
-![quik-stack-logo](https://user-images.githubusercontent.com/17692058/49389849-eafd8c80-f6ec-11e8-87f5-2233f93ff7ef.PNG)
+![quik-stack-logo copy 2](https://user-images.githubusercontent.com/17692058/49395954-7ed75480-f6fd-11e8-9ba2-51bd6ff29a24.PNG)
 
 ### What is this?
 This is an easy-clone setup for creating a website. It uses javascript (Node with Express.js) for the backend. Git clone this repo, run `npm start` and then go to http://localhost:3000/ to see it. The code is an example in-and-of itself. The main peices are:
@@ -25,3 +27,5 @@ quik-history is a module for using with single-page-applications. It calls the l
 <br>Todo:<br>
 - add middleware to quik-backend
 - create quik-auth
+- create quik-db
+- create quik-deploy
