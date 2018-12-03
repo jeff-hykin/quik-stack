@@ -1,8 +1,8 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeff-hykin/quik-stack/blob/master/LICENSE) 
 [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/quik-server) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
-Web development without the boring stuff
 ![quik-stack-logo copy 2](https://user-images.githubusercontent.com/17692058/49395954-7ed75480-f6fd-11e8-9ba2-51bd6ff29a24.PNG)
+Web development without the annoyances
 
 ### What is this?
 This is an easy-clone setup for creating a website. It uses javascript (Node with Express.js) for the backend. Git clone this repo, run `npm start` and then go to http://localhost:3000/ to see it. The code is an example in-and-of itself. The main peices are:
