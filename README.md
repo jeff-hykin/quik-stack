@@ -31,8 +31,8 @@ Git clone this repo, run `npm start` and then go to http://localhost:3000/ to se
 <br>
 <br>
 <br>
-<br>Todo:<br>
-- add middleware system to quik-backend
-- create quik-auth
-- create quik-db
-- create quik-deploy
+<br>Todo:
+<br>- add middleware system to quik-backend
+<br>- create quik-auth
+<br>- create quik-db
+<br>- create quik-deploy
