@@ -1,5 +1,6 @@
-# quik-stack
-A new way to do webdev
+# Quik Stack
+Web development without the boring stuff
+![quik-stack-logo](https://user-images.githubusercontent.com/17692058/49389849-eafd8c80-f6ec-11e8-87f5-2233f93ff7ef.PNG)
 
 ### What is this?
 This is an easy-clone setup for creating a website. It uses javascript (Node with Express.js) for the backend. Git clone this repo, run `npm start` and then go to http://localhost:3000/ to see it. The code is an example in-and-of itself. The main peices are:
