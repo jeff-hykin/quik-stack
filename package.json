@@ -1,6 +1,6 @@
 {
     "name": "quik-app",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "",
     "main": "server.js",
     "scripts": {
@@ -16,8 +16,7 @@
     },
     "browserslist": "last 2 Chrome versions",
     "dependencies": {
-        "quik-server": "^1.2.1"
+        "quik-server": "^2.0.0"
     },
-    "devDependencies": {
-    }
+    "devDependencies": {}
 }
