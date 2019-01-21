@@ -11,7 +11,7 @@ let quikPageManager = app.quikAdd("quik-history")     // this adds the history.l
 
 app.settings = {
     // default settings (all are optional)
-    host: 'localhost',
+    host: "localhost",
     port: 3000,
     websiteFile: "./website.jsx",
     codeFolder: "./code",
