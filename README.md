@@ -113,7 +113,7 @@ app.settings = {
 app.start()
 ```
 
-### What is Quik Stack this?
+### What is Quik Stack?
 This repo is a quick start for new projects and a mini demo of how to utilize quik-server and quik modules.
 
 ### How does it do this stuff?
