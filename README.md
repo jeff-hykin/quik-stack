@@ -53,7 +53,7 @@ document.body.innerHTML = `
 
 ### 2. Add Quik Modules to get additional functionality
 ##### server.js
-```
+```javascript
 let app = require("quik-server")
 
 app.quikAdd("quik-dom")
@@ -62,7 +62,7 @@ app.settings = { websiteFile: "./website.jsx" }
 app.start()
 ```
 ##### website.jsx
-```
+```javascript
 document.body = <body>
     Hello World!
 </body>
@@ -72,12 +72,12 @@ document.body = <body>
 
 ### 3. Import modules on the frontend
 ##### server.js
-```
+```javascript
 let app = require("quik-server")
 app.start()
 ```
 ##### website.jsx
-```
+```javascript
 let $ = require("jquery")
 $(document.body).append("Hello World!")
 ```
@@ -86,7 +86,7 @@ $(document.body).append("Hello World!")
 
 ### 4. Use app.settings for centralized options 
 ##### server.js
-```
+```javascript
 let app = require("quik-server")
 
 app.settings = {
