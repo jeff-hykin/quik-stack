@@ -1,4 +1,4 @@
-let { backend } = require('quik-client');
+let { backend } = require('quik-client')
 
 let usernameElement, passwordElement
 module.exports = <body>
