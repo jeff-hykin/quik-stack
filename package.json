@@ -16,7 +16,14 @@
     },
     "browserslist": "last 2 Chrome versions",
     "dependencies": {
-        "quik-server": "^2.0.0"
+        "quik-backend": "^1.0.3",
+        "quik-dom": "^1.0.6",
+        "quik-history": "^1.1.0",
+        "quik-module-template": "^1.0.0",
+        "quik-server": "^2.1.0"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "node-sass": "^4.11.0",
+        "sass": "^1.38.2"
+    }
 }
