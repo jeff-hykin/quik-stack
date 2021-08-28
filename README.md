@@ -154,6 +154,6 @@ Git clone this repo, run `npm start` and then go to http://localhost:3000/ to se
 <br>- create quik-upload
 <br>- create quik-vids
 
-# Dependencies / Installing
+# How do I get this running?
 
 If you want npm and node-gyp to be handled for you, go see the `documentation/setup.md` file.
