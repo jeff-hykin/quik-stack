@@ -8,17 +8,17 @@ document.head = <head>
     {/* this is the CDN from https://materializecss.com/getting-started.html  */}
     <link rel={"stylesheet"} href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     {/* heres an example of adding a style tag */}
-    <style>{`/* if you wanted to add styles here you could, but I'd reccomend adding styles through code/style.scss */`}</style>
+    <style>{`/* if you wanted to add styles here you could, but I'd reccomend adding styles through main/style.scss */`}</style>
 </head>
 
 // example of how to include a local style sheet (should work with css, sass, less)
-require("./code/style.scss")
+require("./main/style.scss")
 
 //
 // Setup Pages
 //
-let HomePage = require("./code/homePage")
-let LoginPage = require("./code/loginFolder/loginPage")
+let HomePage = require("./main/homePage")
+let LoginPage = require("./main/loginFolder/loginPage")
 
 // Create the page-loading function (This is what you use to switch pages)
 history.loadPage = function(path) {

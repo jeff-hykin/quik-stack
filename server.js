@@ -15,7 +15,7 @@ app.settings = {
     host: "localhost",
     port: 3000,
     websiteFile: "./website.jsx",
-    codeFolder: "./code",
+    codeFolder: "./main",
     computerGeneratedFolder: "./computerGeneratedCode",
     bundlerOptions: {}, // see https://parceljs.org/api.html for options
     afterSystemMiddlewareSetup: () => {

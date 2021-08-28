@@ -8,14 +8,14 @@
 2. Run `npm install -s quik-server;node server.js` in the same directory where you created those files
 3. Open 'localhost:3000' in your browser to see quik-stack at work
 ##### server.js
-```
+```javascript
 let app = require("quik-server")
 
 app.settings = { websiteFile: "./website.jsx" }
 app.start()
 ```
 ##### website.jsx
-```
+```javascript
 document.body.style = `
     display: flex; 
     align-items: center; 
@@ -33,7 +33,7 @@ document.body.innerHTML = `
 ## How can this be used?
 ### 1. Use it with Express.js Middleware
 ##### server.js
-```
+```javascript
 let app = require("quik-server")
 
 // adding cors support (see https://github.com/expressjs/cors)
@@ -43,7 +43,7 @@ app.use(cors())
 app.start()
 ```
 ##### website.jsx
-```
+```javascript
 document.body.innerHTML = `
     Hello World!
 `
@@ -96,8 +96,8 @@ app.settings = {
     // server can also be https (see: https://stackoverflow.com/questions/11744975/enabling-https-on-express-js)
     server: require('http').createServer(app), 
     websiteFile: "./website.jsx",
-    codeFolder: "./code",
-    computerGeneratedFolder: "./computer-generated-code",
+    codeFolder: "./main",
+    computerGeneratedFolder: "./computerGeneratedCode",
     bundlerOptions: {}, // see https://parceljs.org/api.html for options
     afterSystemMiddlewareSetup: () => {
         // anything you want to do
@@ -131,12 +131,12 @@ There is no style of coding you have to adopt to use this. So long as you use mo
 4. <u>Great Core Modules</u><br>
 Right now the default modules are quik-backend, quik-dom, and quik-history.
  - <b>quik-dom</b> enables JSX to HTML, meaning you can basically write html inside of javascript. If you use html tags, html attributes, and html children they will return/evaulate to an Javascript HTMLElement with those attributes with those children.<br>
- - <b>quik-backend</b> enables calling backend functions directly from the frontend using the `quik.backend` object. If you name a file with ".backend.js" and export a function, then that function will be callable from the frontend. For an example of how to call the function from the frontend see `code/loginFolder/loginPage.jsx`. For an example of how to create the backend function, see `code/loginFolder/check.backend.js`. If the pattern ".backend.js" doesn't meet your naming needs, you can set `app.settings.automaticBackendImporter` to be a function that returns `true` on any filename you want to be automatically imported. For example the default is this: `app.settings.automaticBackendImporter = (fileName) => fileName.match(/\.backend\.js$/)`
+ - <b>quik-backend</b> enables calling backend functions directly from the frontend using the `quik.backend` object. If you name a file with ".backend.js" and export a function, then that function will be callable from the frontend. For an example of how to call the function from the frontend see `main/loginFolder/loginPage.jsx`. For an example of how to create the backend function, see `main/loginFolder/check.backend.js`. If the pattern ".backend.js" doesn't meet your naming needs, you can set `app.settings.automaticBackendImporter` to be a function that returns `true` on any filename you want to be automatically imported. For example the default is this: `app.settings.automaticBackendImporter = (fileName) => fileName.match(/\.backend\.js$/)`
 - <b>quik-history</b> is a module for using with SPA's (see https://en.wikipedia.org/wiki/Single-page_application). It lets you set a `history.loadPage` function and it calls `history.loadPage` function (with the new url as an argument) whenever the user presses back/forward. It lets you call `history.loadPage("pageName")` yourself to load new pages via user actions. e.g. `homeButton.onclick = (e)=>history.loadPage("home")`. It keeps track of adding things to the history when that new page is loaded. See `website.jsx` for an example of how to setup the `history.loadPage` function. 
 
 ### How do I get started?
 Git clone this repo, run `npm start` and then go to http://localhost:3000/ to see it. The code is an example in-and-of itself. The main peices to take a look at are:
-1. the files in code/
+1. the files in main/
 2. website.jsx
 3. server.js
 
@@ -153,3 +153,7 @@ Git clone this repo, run `npm start` and then go to http://localhost:3000/ to se
 <br>- create quik-images
 <br>- create quik-upload
 <br>- create quik-vids
+
+# Dependencies / Installing
+
+If you want npm and node-gyp to be handled for you, go see the `documentation/setup.md` file.
