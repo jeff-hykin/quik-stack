@@ -12,7 +12,7 @@
 ## Copy-Paste-Go code
 1. Create the following two files (server.js and website.jsx)
 2. Run `npm install -s quik-server;node server.js` in the same directory where you created those files
-3. Open 'localhost:3000' in your browser to see quik-stack at work
+3. Open 'http://localhost:3000' in your browser to see quik-stack at work
 ##### server.js
 ```javascript
 let app = require("quik-server")
