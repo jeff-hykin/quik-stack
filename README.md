@@ -3,6 +3,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 ![quik-stack-logo copy 2](https://user-images.githubusercontent.com/17692058/49397262-a845af80-f700-11e8-8b78-cae546c236ba.PNG)
 
+
+## How do I get this running?
+
+- If you're unfamilar with npm, follow `documentation/setup.md` for an automated setup
+- If you've already got a npm environment, `npm install quik-server` and then follow the examples below
+
 ## Copy-Paste-Go code
 1. Create the following two files (server.js and website.jsx)
 2. Run `npm install -s quik-server;node server.js` in the same directory where you created those files
@@ -153,7 +159,3 @@ Git clone this repo, run `npm start` and then go to http://localhost:3000/ to se
 <br>- create quik-images
 <br>- create quik-upload
 <br>- create quik-vids
-
-# How do I get this running?
-
-If you want npm and node-gyp to be handled for you, go see the `documentation/setup.md` file.
